@@ -1,0 +1,25 @@
+---
+applications:
+- name: ${APP_EXE}-${ENV}
+  memory: 128M
+  instances: 1
+  command: /app/bin/${APP_EXE}
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+#  services:
+#    - goboot-rabbitmq
+#    - goboot-postgres
+#    - goboot-logstash
+#    - goboot-redis
+#  env:
+#    GOVERSION: go1.7
+#    uaa_url: $uaa_url
+#    uaa_client_id: $uaa_client_id
+#    uaa_client_secret: $uaa_client_secret
+#    goboot_logging: >
+#      {
+#        \"level\": \"$log_level\"
+#      }
+#    version: $VERSION
+#    build: $BUILD
+#
+
